@@ -22,25 +22,27 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/backspace"
+                android:id="@+id/clear"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/back"
-                android:onClick="backClicked"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/clear" />
 
             <Button
                 android:id="@+id/decimal"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/decimal"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/decimal" />
 
             <Button
                 android:id="@+id/divide"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="buttonClicked"
                 android:text="@string/divide" />
 
             <Button
@@ -48,6 +50,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="buttonClicked"
                 android:text="@string/multiply" />
         </TableRow>
 
@@ -57,31 +60,35 @@
 
             <Button
                 android:id="@+id/seven"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/seven"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/seven" />
 
             <Button
                 android:id="@+id/eight"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/eight"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/eight" />
 
             <Button
                 android:id="@+id/nine"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nine"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/nine" />
 
             <Button
                 android:id="@+id/subtract"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/minus"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/subtract" />
         </TableRow>
 
         <TableRow
@@ -90,30 +97,34 @@
 
             <Button
                 android:id="@+id/four"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/four"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/four" />
 
             <Button
                 android:id="@+id/five"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/five"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/five" />
 
             <Button
                 android:id="@+id/six"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/six"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/six" />
 
             <Button
                 android:id="@+id/add"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="buttonClicked"
                 android:text="@string/plus" />
         </TableRow>
 
@@ -123,32 +134,59 @@
 
             <Button
                 android:id="@+id/one"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/one"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/one" />
 
             <Button
                 android:id="@+id/two"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/two"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/two" />
 
             <Button
                 android:id="@+id/three"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/three"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:onClick="buttonClicked"
+                android:text="@string/three" />
 
             <Button
                 android:id="@+id/equals"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="buttonClicked"
                 android:text="@string/equals" />
+
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/zero"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="buttonClicked"
+                android:text="@string/zero" />
+
+            <Button
+                android:id="@+id/back"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="buttonClicked"
+                android:text="@string/back" />
+        </TableRow>
+
     </TableLayout>
 
     <TextView
@@ -159,7 +197,7 @@
         android:layout_marginEnd="16dp"
         android:text="@string/currentExpression"
         android:textAlignment="textEnd"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -172,7 +210,7 @@
         android:layout_marginEnd="16dp"
         android:text="@string/lastExpression"
         android:textAlignment="textEnd"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/currentExpression"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
